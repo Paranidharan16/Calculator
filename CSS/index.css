@@ -34,7 +34,7 @@ body {
 
 .result {
   position: absolute;
-  right: 0;
+  right: 10px;
   bottom: 10px;
 }
 .cal-container {

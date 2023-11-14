@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <script src="./JS/index.js" defer></script>
-  </head>
-  <body>
-    <div class="or"></div>
-    <div class="blu"></div>
-    <div class="display">
-      <p class="result"></p>
-    </div>
-    <div class="cal-container">
-      <div class="add num">+</div>
-      <div class="sub num">-</div>
-      <div class="div num">/</div>
-      <div class="mul num">*</div>
-      <div class="one num">1</div>
-      <div class="two num">2</div>
-      <div class="three num">3</div>
-      <div class="four num">4</div>
-      <div class="five num">5</div>
-      <div class="six num">6</div>
-      <div class="seven num">7</div>
-      <div class="eight num">8</div>
-      <div class="nine num">9</div>
-      <div class="dot num">.</div>
-      <div class="zero num">0</div>
-      <div class="clear">DEL</div>
-      <div class="equal">=</div>
-    </div>
-  </body>
-</html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rock Paper Sisor</title>
+      <!-- Linking Style Sheet -->
+      <link rel="stylesheet" href="./CSS/index.css"/>
+      <!-- Linking Js File -->
+      <script src="./JS/index.js" defer></script>
+    </head>
+    <body>
+
+      <!-- Title -->
+
+      <header><h1 class="title">Rock Paper Scissors</h1></header>
+
+      <!--Creating Button for Rock, Paper, Sis-->
+
+      <div class="container">
+        <img src="./Img/Rock.png" class="Rock btn" data-type="Rock"></img>
+        <img src="./Img/Paper.png" class="Paper btn" data-type="Paper"></img>
+        <img src="./Img/Sis.png" class="Sis btn" data-type="Sis"></img>
+      </div>
+
+
+      <!--Creating Score Card for User, Computer, Tie-->
+
+      <div class="score-card">
+        <p>Your Score : <span class="player-score">0</span></p>
+        <p>Tie : <span class="tie-score">0</span></p>
+        <p>Computer Score : <span class="Computer-score">0</span></p>
+      </div>
+
+      <!-- Result -->
+
+      <div class="result hidden">
+
+        <h1 class="tie hidden">Tie</h1>
+        <h1 class="win hidden">You Win</h1>
+        <h1 class="lose hidden">You Lose</h1>
+      </div>
+
+   </body>
+  </html>
+
